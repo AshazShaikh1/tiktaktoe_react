@@ -1,0 +1,20 @@
+.block{
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+.row{
+
+  display: flex;
+}
+
+.board{
+  padding: 10px;
+}
+
