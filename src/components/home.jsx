@@ -3,6 +3,7 @@ import './home.css'
 function Home(){
   return(
     <div className="container">
+      <h1 className='title'>Wel<span>come</span></h1>
       <div className="text">
         <h1>tic</h1>
         <h1>tac</h1>
