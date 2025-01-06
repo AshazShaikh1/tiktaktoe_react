@@ -1,10 +1,10 @@
 
-import { useState } from 'react';
+import { StrictMode, useState } from 'react';
 import './App.css';
 import Block from './components/block';
+import Home from './components/home'
 
 function win(state){
-
   const winning = [
     [0,1,2],
     [3,4,5],
@@ -47,7 +47,7 @@ function App() {
   }
 
   return (
-    <div className='board'>
+    <div className='board'> 
       <div className='row'>
       <Block handleclick={()=>handleclick(0)} value={state[0]}/>
       <Block handleclick={()=>handleclick(1)} value={state[1]} />
@@ -65,7 +65,6 @@ function App() {
         <Block handleclick={()=>handleclick(8)} value={state[8]}/>
       </div>
     </div>
-  );
-}
+) }
 
 export default App;
