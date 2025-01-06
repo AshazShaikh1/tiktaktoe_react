@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
+  font-family: "Kanit", serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,6 +25,27 @@ body{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.title{
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 45px;
+  animation: animate 1s ease-in-out infinite alternate;
+}
+
+@keyframes animate{
+  from{
+    text-shadow: 0 0 20px #FF0000;
+  }to{
+    text-shadow: 0 0 100px #FF0000
+                 0 0 100px #FF0000;
+  }
+}
+
+span{
+  color: yellow;
 }
 
 .text {
@@ -94,6 +118,8 @@ body{
 }
 
 .btn {
+  text-transform: uppercase;
+  font-weight: 500;
   margin: 10px;
   padding: 15px 40px;
   border: none;
