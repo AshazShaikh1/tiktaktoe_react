@@ -1,3 +1,4 @@
+import './css/game.css';
 import { useState } from "react";
 import Block from "./block";
 function win(state){
